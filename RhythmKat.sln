@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhythmKat.Repository", "RhythmKat.Repository\RhythmKat.Repository.csproj", "{1E1D2A4E-692B-4EF0-8928-B446A3A52233}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7F425218-CD63-4960-B248-C02C39037492} = {7F425218-CD63-4960-B248-C02C39037492}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhythmKat.Service", "RhythmKat.Service\RhythmKat.Service.csproj", "{9D412743-A89D-4EE5-A908-C2F54E98BC3D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7F425218-CD63-4960-B248-C02C39037492} = {7F425218-CD63-4960-B248-C02C39037492}
+		{1E1D2A4E-692B-4EF0-8928-B446A3A52233} = {1E1D2A4E-692B-4EF0-8928-B446A3A52233}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhythmKat.Model", "..\..\..\..\Documents\Visual Studio 2015\Projects\RhythmKat\RhythmKat.Model\RhythmKat.Model.csproj", "{7F425218-CD63-4960-B248-C02C39037492}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E1D2A4E-692B-4EF0-8928-B446A3A52233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E1D2A4E-692B-4EF0-8928-B446A3A52233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E1D2A4E-692B-4EF0-8928-B446A3A52233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E1D2A4E-692B-4EF0-8928-B446A3A52233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D412743-A89D-4EE5-A908-C2F54E98BC3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D412743-A89D-4EE5-A908-C2F54E98BC3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D412743-A89D-4EE5-A908-C2F54E98BC3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D412743-A89D-4EE5-A908-C2F54E98BC3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F425218-CD63-4960-B248-C02C39037492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F425218-CD63-4960-B248-C02C39037492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F425218-CD63-4960-B248-C02C39037492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F425218-CD63-4960-B248-C02C39037492}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
