@@ -86,5 +86,15 @@ namespace RhythmKat.Repository.TestRepository
 		{
 			return TestGames.Where(a => a.Systems.Any(b => b.SystemId == p_system.SystemId)).ToList();
 		}
-	}
+
+        public List<GameSeries> GetAllSeries()
+        {
+            return TestSeries.ToList();
+        }
+
+        public List<GameSystem> GetAllSystems()
+        {
+            return TestSystems;
+        }
+    }
 }

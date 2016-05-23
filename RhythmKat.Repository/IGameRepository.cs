@@ -23,6 +23,10 @@ namespace RhythmKat.Repository
 
         List<Game> GetGamesBySeries(GameSeries p_series);
 
+        List<GameSeries> GetAllSeries();
+
+        List<GameSystem> GetAllSystems();
+
         #endregion
 
         #region Update

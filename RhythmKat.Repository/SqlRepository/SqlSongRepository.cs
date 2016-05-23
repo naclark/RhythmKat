@@ -7,45 +7,40 @@ using RhythmKat.Model;
 
 namespace RhythmKat.Repository.SqlRepository
 {
-    public class SqlGameRepository : IGameRepository
+    public class SqlSongRepository : ISongRepository
     {
         private string _connectionString { get; set; }
 
         /// <summary>
-        /// Uses a SQL database as the data source for the Game objects.
+        /// Uses a SQL database as the data source for the Song objects.
         /// </summary>
         /// <param name="p_connectionString"></param>
-        public SqlGameRepository(string p_connectionString)
+        public SqlSongRepository(string p_connectionString)
         {
             _connectionString = p_connectionString;
         }
 
-        public List<Game> GetAllGames()
+        public List<Song> GetAllSongs()
         {
             throw new NotImplementedException();
         }
 
-        public List<Game> GetGamesByMaker(string p_maker)
+        public List<Song> GetSongsByArtist(Artist p_artist)
         {
             throw new NotImplementedException();
         }
 
-        public List<Game> GetGamesBySeries(GameSeries p_series)
+        public List<Song> GetSongsByTitle(string p_searchTitle)
         {
             throw new NotImplementedException();
         }
 
-        public List<Game> GetGamesBySystem(GameSystem p_system)
+        public List<Song> GetSongsByLanguage(LanguageEnum p_language)
         {
             throw new NotImplementedException();
         }
 
-        public List<GameSeries> GetAllSeries()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<GameSystem> GetAllSystems()
+        public List<Song> GetSongsByGame(Game p_game)
         {
             throw new NotImplementedException();
         }
